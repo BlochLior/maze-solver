@@ -9,7 +9,7 @@ class Window:
         self.__running = False
         self.__root.protocol("WM_DELETE_WINDOW", self.close)
     
-    def draw_line(self, line, fill_color=str):
+    def draw_line(self, line, fill_color="black"):
         line.draw(self.__canvas, fill_color)
 
     def redraw(self):
@@ -41,5 +41,3 @@ class Line:
             self.p2.x, self.p2.y, fill=fill_collor,
             width=2
         )
-
-
